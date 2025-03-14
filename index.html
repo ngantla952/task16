@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Project Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header-section">
+            <h1>CLass WOrks</h1>
+        </div>
+
+        <div class="nav-panel">
+            <button onclick="loadProject('task1')">Project 1</button>
+            <button onclick="loadProject('task2')">Project 2</button>
+            <button onclick="loadProject('task3')">Project 3</button>
+        </div>
+
+        <div class="display-section">
+            <iframe id="projectFrame" src="works/landing.html" title="Select a project">Select a project</iframe>
+        </div>
+    </div>
+</body>
+</html>

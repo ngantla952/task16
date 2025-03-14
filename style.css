@@ -1,0 +1,87 @@
+/* Updated Background for a modern look */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Dark blue to teal */
+    font-family: Arial, sans-serif;
+}
+
+/* Centered container with MacBook Pro dimensions */
+.container {
+    width: 90%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+    padding: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header Section */
+.header-section {
+    text-align: center;
+    padding: 25px;
+    background: #34495e; /* Darker navy */
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Panel */
+.nav-panel {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: #f4f4f4;
+}
+
+.nav-panel button {
+    padding: 14px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: background 0.3s, transform 0.2s;
+    background: #4ca1af; /* Teal */
+    color: white;
+    font-weight: bold;
+}
+
+.nav-panel button:hover {
+    background: #2c3e50; /* Dark blue */
+    transform: scale(1.1);
+}
+
+/* Display Section */
+.display-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+/* MacBook Pro Frame Size */
+iframe {
+    width: 1280px;
+    height: 800px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
